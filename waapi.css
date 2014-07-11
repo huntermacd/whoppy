@@ -1,0 +1,43 @@
+::-moz-selection { background: transparent; }
+::selection { background: transparent; }
+
+body{
+	margin:0;
+}
+
+#player div {
+	width: 25%;
+	height: 25%;
+	float: left;
+	font-size: 72px;
+	font-family: monospace;
+	text-align: center;
+	cursor: -webkit-grab;
+}
+
+#player div:active{
+	background-color:orange;
+}
+
+#player div.small {
+	font-size: 26px;
+	
+}
+
+#change-key {
+	height: 25%;
+	width: 100%;
+	background-color: rgb(0, 100, 255);
+	clear: both;
+	font-size: 60px;
+	text-align: center;
+	font-family: monospace;
+}
+
+#change-key:active{
+	background-color:yellow;
+}
+
+.highlight {
+	background-color: rgb(0, 255, 100);
+}
