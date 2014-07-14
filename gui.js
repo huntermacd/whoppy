@@ -1,18 +1,6 @@
 // (function(){
 	var changeKeyDiv = document.getElementById("change-key");
 	var changekeyState = false;
-	var a = document.getElementById("a");
-	var aSharp = document.getElementById("a-sharp");
-	var b = document.getElementById("b");
-	var c = document.getElementById("c");
-	var cSharp = document.getElementById("c-sharp");
-	var d = document.getElementById("d");
-	var dSharp = document.getElementById("d-sharp");
-	var e = document.getElementById("e");
-	var f = document.getElementById("f");
-	var fSharp = document.getElementById("f-sharp");
-	var g = document.getElementById("g");
-	var gSharp = document.getElementById("g-sharp");
 	var keys = document.querySelectorAll('#player div');
 
 	function changeKey(keyName){
