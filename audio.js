@@ -1,7 +1,8 @@
 //(function(){
 
 // web audio environment stuff
-var waapi = new window.webkitAudioContext();
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
+var waapi = new (window.AudioContext);
 
 var osc = waapi.createOscillator();
 osc.type = Math.floor(Math.random()*4);
@@ -10,7 +11,7 @@ var filter = waapi.createBiquadFilter();
 filter.type = filter.LOWPASS;
 var filterRelease = Math.random()*2;
 
-var amp = waapi.createGainNode();
+var amp = waapi.createGain();
 amp.gain.value = 0;
 var ampAttack = Math.random()*2;
 
